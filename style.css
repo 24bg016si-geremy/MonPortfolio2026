@@ -369,3 +369,149 @@ footer a:hover{
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+:root {
+    --primary-color: #4a5dbf;
+    --bg-light: #f8f9fa;
+    --white: #ffffff;
+    --shadow: 0 4px 15px rgba(0,0,0,0.1);
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-light);
+    margin: 0;
+    color: #333;
+}
+
+/* Titres */
+.section-title {
+    text-align: center;
+    color: var(--primary-color);
+    margin: 40px 0;
+    font-size: 2rem;
+}
+
+/* Grille de cartes (Modèle Page Projet) */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.card {
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body i {
+    font-size: 2rem;
+    color: #ffd700; /* Jaune comme sur tes captures */
+    margin-bottom: 10px;
+}
+
+.card-body h3 {
+    margin: 10px 0;
+    color: var(--primary-color);
+}
+
+.card-body p {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.5;
+}
+
+/* --- STYLE CONTACT PRO --- */
+.contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 40px;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    margin-top: 20px;
+}
+
+.contact-info h2 { color: var(--primary-color); }
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.info-item i {
+    width: 40px;
+    height: 40px;
+    background: #eef1ff;
+    color: var(--primary-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+/* Formulaire */
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-family: inherit;
+}
+
+.btn-submit {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    transition: var(--transition);
+}
+
+.btn-submit:hover { background: #3547a3; }
+
+/* Boutons Réseaux */
+.social-links { display: flex; gap: 10px; margin-top: 20px; }
+.btn-social {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 0.9rem;
+}
+.whatsapp { background: #25D366; }
+.telegram { background: #0088cc; }
