@@ -59,12 +59,15 @@
         </div>
 
         <div class="contact-form">
-            <form>
-                <input type="text" placeholder="Votre nom complet" required>
-                <input type="email" placeholder="Votre adresse email" required>
-                <textarea rows="5" placeholder="Comment puis-je vous aider ?" required></textarea>
-                <button type="submit" class="btn-submit">Envoyer le message</button>
-            </form>
+            <form action="https://formspree.io/f/TON_ID" method="POST">
+    <input type="text" name="name" placeholder="Votre nom complet" required>
+    
+    <input type="email" name="email" placeholder="Votre adresse email" required>
+    
+    <textarea name="message" rows="5" placeholder="Comment puis-je vous aider ?" required></textarea>
+    
+    <button type="submit" class="btn-submit">Envoyer le message</button>
+</form>
         </div>
     </div>
 </main>
